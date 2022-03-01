@@ -1,0 +1,10 @@
+version: "3"
+services:
+  api:
+    image: go-gin-api:v1
+    build: .
+    restart: always
+    ports:
+    - 3000:3000
+    environment:
+    - GDP_API_PORT=3000
