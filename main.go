@@ -10,7 +10,7 @@ import (
 func main() {
 	router := gin.Default()
 	router.GET("/dummy", func(c *gin.Context) {
-		c.String(http.StatusOK, "Hellow everyone 18!")
+		c.String(http.StatusOK, "Hellow everyone 19!")
 	})
 
 	router.GET("/bye", func(c *gin.Context) {
