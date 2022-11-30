@@ -4,6 +4,7 @@ metadata:
   name: {{ include "go-gin-api.fullname" . }}
   labels:
     {{- include "go-gin-api.labels" . | nindent 4 }}
+  namespace: {{ .Release.Namespace }}
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
