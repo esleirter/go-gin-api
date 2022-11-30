@@ -1,0 +1,6 @@
+image:
+  registry: harbor.gdpteam.com
+  tag: 5ea0874062b75b2513ab05fe3a0b73e7ac5d945c
+envVars:
+  ENV_TEST: "Hello"
+  ENV_NUMBER: "1"
