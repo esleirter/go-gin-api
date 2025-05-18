@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-alpine
+  labels:
+    app: nginx-alpine
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: nginx-alpine
+  template:
+    metadata:
+      labels:
+        app: nginx-alpine
+    spec:
+      containers:
+        - name: nginx
+          image: nginx:alpine
+          ports:
+            - containerPort: 80
